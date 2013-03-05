@@ -79,6 +79,8 @@ define('WPLANG', '');
  */
 define('WP_DEBUG', false);
 
+define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] );
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
@@ -87,5 +89,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
-define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] );
